@@ -1,0 +1,72 @@
+// .fixed-menu__list {
+//     position: fixed;
+//     top: 90px;
+//     right: 50px;
+// }
+ 
+// .fixed-menu__link {
+//     width: 5px;
+//     height: 5px;
+//     display: block;
+//     position: relative;
+
+//     &:after {
+//         content: '';
+//         background: #fff;
+//         color: #fff;
+//         height: 5px;
+//         width: 5px;
+//         display: block;
+//         border-radius: 50%;
+//     }
+// }
+ 
+// .fixed-menu__item {
+//     margin-top: 16px;
+//     border: 1px solid #fff;
+//     border-radius: 50%;
+//     padding: 5px;
+// }
+
+
+.fixed-menu {
+    position: fixed;
+    top: 90px;
+    right: 50px;
+}
+
+.fixed-menu__item {
+    margin-bottom: 15px;
+
+    &.active {
+        .fixed-menu__link {
+            border-color: #fff;
+        }
+    }
+}
+
+.fixed-menu__link {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    border: 1px solid transparent;
+
+    &:hover {
+        border-color: #fff;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

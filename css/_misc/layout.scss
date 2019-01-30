@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6, p, ul, {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    @include ubuntu(medium);
+    color: $black;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-width: 940px;
+    min-height: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.section {
+    height: 100vh;
+    min-height: 650px;
+    &-centered {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

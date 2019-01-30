@@ -1,0 +1,27 @@
+// normalize
+@import "./_misc/normilize.scss";
+
+// setups
+@import "./_misc/variables.scss";
+@import "./_misc/fonts.scss";
+@import "./_misc/layout.scss";
+
+// common 
+@import "./blocks/common/fixed-menu.scss";
+@import "./blocks/common/btn.scss";
+@import "./blocks/common/title.scss";
+@import "./blocks/common/subtitle.scss";
+@import "./blocks/common/text.scss";
+
+
+// blocks
+@import "./blocks/about.scss";
+@import "./blocks/features.scss";
+@import "./blocks/burgers.scss";
+@import "./blocks/team.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/working.scss";
+@import "./blocks/order.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";

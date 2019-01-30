@@ -1,0 +1,14 @@
+.subtitle {
+    @include lifehack();
+
+    &--white {
+        font-size: 72px;
+        letter-spacing: -1.6px;
+        color: #fff;
+    }
+    &--black {
+        font-size: 24px;
+        color: $black;
+        letter-spacing: -0.6px;
+    }
+}
