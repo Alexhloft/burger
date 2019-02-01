@@ -1,0 +1,43 @@
+.footer {
+    background: url(../img/bg8.png) center center / cover no-repeat;
+}
+
+.footer__container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts {
+    font-style: normal;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.contacts__phone {
+    color: $orange;
+    font-weight: bold;
+
+    &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url(../img/icons/phone.svg);
+    }
+}
+
+.socials {
+    width: 50%;
+    text-align: right;
+}
+
+.socials__list {
+    display: flex;
+}
+
+.socials__item {
+    padding-right: 20px;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}

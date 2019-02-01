@@ -1,0 +1,18 @@
+.map {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.map__obj {
+    background: url(../img/map.png) center center / cover no-repeat;
+    height: 100%;
+}
+
+.map__footer {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
