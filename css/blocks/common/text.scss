@@ -1,5 +1,5 @@
 .text {
     @include ubuntu(light);
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
 }

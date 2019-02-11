@@ -3,6 +3,7 @@
 
 // setups
 @import "./_misc/variables.scss";
+@import "./_misc/mixins.scss";
 @import "./_misc/fonts.scss";
 @import "./_misc/layout.scss";
 
@@ -12,7 +13,7 @@
 @import "./blocks/common/title.scss";
 @import "./blocks/common/subtitle.scss";
 @import "./blocks/common/text.scss";
-
+@import "./blocks/common/hamb-menu.scss";
 
 // blocks
 @import "./blocks/about.scss";

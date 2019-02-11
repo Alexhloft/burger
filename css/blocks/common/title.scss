@@ -1,11 +1,14 @@
 .title {
     @include gagalin();
-    font-size: 72px;
+    font-size: rem(72px);
     
     &--yellow {
         color: $yellow;
     }
     &--black {
         color: $black;
+    }
+    &--white {
+        color: #fff;
     }
 }

@@ -1,0 +1,144 @@
+.order {
+    background: url(../img/bg8.png) center center / cover no-repeat,
+                url(../img/bg-texture2.png) center center / cover no-repeat;
+    
+}
+
+.order__title {
+    margin: 0 auto rem(15px);
+}
+
+.form__elem {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.form__part {
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: rem(20px);
+}
+
+.form__block {
+    flex: 1;
+    margin-right: rem(20px);
+    user-select: none;  
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--floor {
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+.form__block-title {
+    color: #fff;
+    margin-bottom: rem(5px);
+
+    &--reset {
+        padding: rem(8px) rem(15px);
+    }
+}
+
+.form__input {
+    border: none;
+    border-radius: rem(5px);
+    padding: rem(8px) rem(8px) rem(8px) rem(15px);
+    width: 100%;
+    border: rem(2px) solid transparent;
+
+    &:focus {
+        border-color: $yellow;
+    }
+}
+
+.form__textarea {
+    min-width: rem(460px);
+    height: rem(124px);
+	resize: none;
+}
+
+.form__block-row {
+    display: flex;
+    align-items: center;
+}
+
+.form__input-hdn {
+	display: none;
+}
+
+.form__radio-fake {
+	display: inline-block;
+	height: rem(15px);
+	width: rem(15px);
+    
+    background: #fff;
+	border-radius: 50%;
+	
+	position: relative;
+	vertical-align: middle;
+	
+	margin-right: rem(10px);
+    
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: $red;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.form__input-hdn:checked + .form__radio-fake:after {
+	width: rem(7px);
+	height: rem(7px);
+}
+
+.form__checkbox-fake {
+	display: block;
+	height: rem(15px);
+	width: rem(15px);
+    
+    background: #fff;
+    
+    position: relative;
+	text-align: center;   
+    
+    margin-right: rem(10px);
+    
+    &:before {
+        content: '';    
+        position: absolute; 
+        top: 10%; 
+        right: 6%;
+        width: rem(12px);
+        height: rem(12px);
+        background: $red;
+        clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
+        transform: scale(0);
+        transition: transform .05s;
+    }
+}
+
+.form__input-hdn:checked + .form__checkbox-fake:before {
+	transform: scale(1);
+}

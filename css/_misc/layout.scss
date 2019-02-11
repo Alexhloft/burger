@@ -19,13 +19,24 @@ a {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+
+    @include tablets {
+        font-size: 14px;
+    }
+
+    @include phones {
+        font-size: 13px;
+    }
+}
 
 html, body {
     height: 100%;
 }
 
 body {
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -38,7 +49,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-width: 940px;
+    // min-width: 940px;
     min-height: 100%;
 }
 
@@ -46,13 +57,15 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 940px;
+    max-width: 940px;
+    width: 95%;
     margin: 0 auto;
 }
 
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
+
     &-centered {
         display: flex;
         flex-direction: column;

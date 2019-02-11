@@ -1,11 +1,11 @@
 .btn {
     display: inline-block;
-    padding: 8px 15px;
+    padding: rem(8px) rem(15px);
     color: #fff;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: rem(5px);
     
     &--red {
         background: $red;

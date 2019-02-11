@@ -7,8 +7,8 @@
 }
 
 .working__video {
-    width: 660px;
-    height: 370px;
+    width: rem(660px);
+    height: rem(370px);
     background: $black;
-    margin-top: 25px;
+    margin-top: rem(25px);
 }
