@@ -1,6 +1,7 @@
 .title {
     @include gagalin();
     font-size: rem(72px);
+    line-height: rem(64px);
     
     &--yellow {
         color: $yellow;

@@ -1,0 +1,55 @@
+.menu-btn {
+    position: fixed;
+    top: rem(35px);
+    right: rem(30px);
+    height: rem(27px);
+    width: rem(35px);
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease; 
+
+    display: none;
+
+    @include tablets {
+        display: block;
+    }
+}
+
+.menu-btn--active {
+    opacity: 0.7;
+
+    .menu-btn--top {
+        transform: translateY(rem(11px)) translateX(0) rotate(45deg);
+        border-radius: rem(5px);
+    }
+
+    .menu-btn--middle {
+        opacity: 0;
+    }
+
+    .menu-btn--bottom {
+        transform: translateY(rem(-11px)) translateX(0) rotate(-45deg);
+        border-radius: rem(5px);
+    }
+}
+
+.menu-btn__item {
+    background: #fff;
+    border: none;
+    height: rem(5px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer; 
+
+    &:nth-of-type(2) {
+        top: rem(11px);
+    }
+    &:nth-of-type(3) {
+        top: rem(22px);
+    }
+}
+
+

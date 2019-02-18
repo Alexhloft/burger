@@ -1,11 +1,14 @@
 .order {
     background: url(../img/bg8.png) center center / cover no-repeat,
                 url(../img/bg-texture2.png) center center / cover no-repeat;
-    
+
+    background-blend-mode: color;
 }
 
 .order__title {
-    margin: 0 auto rem(15px);
+    margin-bottom: rem(15px);
+
+    text-align: center;
 }
 
 .form__elem {
@@ -19,6 +22,10 @@
 .form__part {
     margin-right: rem(20px);
 
+    @include tablets {
+        margin-right: 0;
+    }
+
     &:last-child {
         margin-right: 0;
     }
@@ -27,16 +34,13 @@
 .form__row {
     display: flex;
     margin-bottom: rem(20px);
+    margin-left: rem(-20px);
 }
 
 .form__block {
     flex: 1;
-    margin-right: rem(20px);
+    margin-left: rem(20px);
     user-select: none;  
-
-    &:last-child {
-        margin-right: 0;
-    }
 
     &--floor {
         @include phones {
@@ -69,7 +73,11 @@
 .form__textarea {
     min-width: rem(460px);
     height: rem(124px);
-	resize: none;
+    resize: none;
+    
+    @include tablets {
+        min-width: 100%;
+    }
 }
 
 .form__block-row {
@@ -141,4 +149,12 @@
 
 .form__input-hdn:checked + .form__checkbox-fake:before {
 	transform: scale(1);
+}
+
+.form__row-mobile {
+    display: inline-flex;
+
+    @include phones {
+        text-align: center;
+    }
 }

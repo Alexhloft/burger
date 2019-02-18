@@ -1,6 +1,9 @@
 .btn {
-    display: inline-block;
-    padding: rem(8px) rem(15px);
+    // display: inline-block;
+    // padding: rem(8px) rem(15px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     font-size: rem(13px);
     text-transform: uppercase;
@@ -8,9 +11,13 @@
     border-radius: rem(5px);
     
     &--red {
+        width: rem(98px);
+        height: rem(35px);
         background: $red;
     }
     &--black {
+        width: rem(110px);
+        height: rem(35px);
         background: $black;
     }
 }

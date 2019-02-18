@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, p, ul, {
+h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0px;
     padding: 0px;
 }
@@ -64,7 +64,7 @@ body {
 
 .section {
     height: 100vh;
-    min-height: rem(650px);
+    // min-height: rem(650px);
 
     &-centered {
         display: flex;

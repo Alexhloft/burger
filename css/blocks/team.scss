@@ -22,16 +22,18 @@
     }
 }
 
-.team__content {
-    text-align: center;
+.team__title {
+    margin-bottom: rem(60px);
 }
 
-.team__title {
-    margin-bottom: rem(10px);
+.team__content {
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .team-acco__item {
-    margin-bottom: rem(40px);
+    // margin-bottom: rem(40px);
 
     &:last-child {
         margin-bottom: 0;
@@ -47,7 +49,7 @@
         }
 
         .team-acco__content {
-            height: rem(200px);
+            height: rem(120px);
         }
     }
 }
@@ -96,7 +98,7 @@
 
 .team-acco__content {
     display: flex;
-    padding-top: rem(14px);
+    padding-top: rem(14px) 0 rem(14px);
     height: 0;
     overflow: hidden;
 

@@ -35,6 +35,7 @@
     &__desc {
         @include phones {
             flex: 1;
+            margin-left: rem(25px);
         }
     }
 

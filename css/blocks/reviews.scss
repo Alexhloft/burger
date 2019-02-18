@@ -28,7 +28,13 @@
 
 .reviews__title {
     font-size: rem(14px);
+    line-height: rem(24px);
     color: #fff;
+
+    @include phones {
+        font-size: rem(20px);
+        margin-bottom: rem(5px);
+    }
 }
 
 .reviews__hover {
@@ -42,12 +48,16 @@
     transition: opacity .3s;
 
     padding: rem(50px) rem(20px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .reviews__text {
-    margin-top: rem(25px);
+    margin-top: rem(10px);
 
-    @include tablets {
+    @include phones {
         display: none;
     }
 }

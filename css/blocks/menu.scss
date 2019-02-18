@@ -18,6 +18,9 @@
 
 .menu-acco__item {
 	height: 100%;
+	@include phones {
+		width: rem(70px);
+	}
 
 	&.active {
 		.menu-acco__trigger-text {
