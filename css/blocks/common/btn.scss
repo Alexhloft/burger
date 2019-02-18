@@ -13,11 +13,19 @@
     &--red {
         width: rem(98px);
         height: rem(35px);
-        background: $red;
+        background: $orange;
+
+        &:hover {
+            background: $darkred;
+        }
     }
     &--black {
         width: rem(110px);
         height: rem(35px);
         background: $black;
+
+        &:hover {
+            background: $black2;
+        }
     }
 }

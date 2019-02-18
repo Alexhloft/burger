@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <main class="main">
-            <section class="section about">
+            <section class="section about" id="about">
                 <div class="container about__container">
                     <header class="header about__header">
                         <a href="index.html" class="logo header__logo">
@@ -22,16 +22,16 @@
                         <div class="header__btns">
                             <nav class="nav">
                                 <ul class="nav__list">
-                                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Бургеры</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                                    <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                                    <li class="nav__item"><a href="#burgers" class="nav__link">Бургеры</a></li>
+                                    <li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
+                                    <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
+                                    <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                                    <li class="nav__item"><a href="#working" class="nav__link">Как мы работаем</a></li>
+                                    <li class="nav__item"><a href="#map" class="nav__link">Контакты</a></li>
                                 </ul>
                             </nav>
-                            <a href="#" class="btn btn--red">Заказать</a>
+                            <a href="#order" class="btn btn--red">Заказать</a>
                         </div>
                     </header>
                     <div class="about__content">
@@ -51,7 +51,7 @@
                     </a>
                 </div>
             </section>
-            <section class="section features section-centered">
+            <section class="section features section-centered" id="features">
                 <div class="container features__container">
                     <h2 class="features__title title title--black">Мы лучшие</h2>
                     <div class="features__wrap">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section burgers">
+            <section class="section burgers" id="burgers">
                 <div class="burgers__left">
                     <a href="" class="burgers__arrow">
                         <svg class="burgers__arrow-img-left">
@@ -167,6 +167,7 @@
                                         </div>
                                     </li>
                                 </ul>
+                                <a href="#burgers" class="close-btn"></a>
                             </div>
                         </div>
                         <div class="burgers__burger-img">
@@ -200,7 +201,7 @@
                     </a>
                 </div>
             </section>
-            <section class="section team">
+            <section class="section team" id="team">
                 <div class="team__section">
                     <div class="team__content">
                         <div class="team__title title title--yellow">Команда</div>
@@ -257,7 +258,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section menu">
+            <section class="section menu" id="menu">
                 <div class="menu__title title title--white">Меню</div>
                 <ul class="menu-acco">
                     <li class="menu-acco__item active">
@@ -307,7 +308,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section reviews">
+            <section class="section reviews" id="reviews">
                 <ul class="reviews__list">
                     <li class="reviews__item" style="background-image: url('./img/w1.png')">
                         <div class="reviews__hover">
@@ -367,13 +368,13 @@
                     </li>
                 </ul>
             </section>
-            <section class="section working section-centered">
+            <section class="section working section-centered" id="working">
                 <div class="container working__container">
                     <h2 class="working__title title title--black">Как мы работаем</h2>
                     <div class="working__video"></div>
                 </div>
             </section>
-            <section class="section order section-centered">
+            <section class="section order section-centered" id="order">
                 <div class="container">
                     <div class="order__title title title--yellow">Закажите доставку</div>
                     <div class="form">
@@ -455,7 +456,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section map">
+            <section class="section map" id="map">
                 <div class="map__obj"></div>
                 <footer class="footer map__footer">
                     <div class="footer__container container">
@@ -506,15 +507,15 @@
         </main>
         <nav class="fixed-menu">
             <ul class="fixed-menu__list">
-                <li class="fixed-menu__item fixed-menu__item--active"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item fixed-menu__item--active"><a href="#about" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#features" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#burgers" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#team" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#menu" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#reviews" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#working" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#order" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="#map" class="fixed-menu__link"></a></li>
             </ul>
         </nav>
         <div class="menu-btn" id="toggle">
@@ -525,13 +526,12 @@
         <div class="overlay" id="overlay">
             <nav class="nav-overlay">
                 <ul class="nav__list nav__list-overlay">
-                    <li class="nav__item nav__item-overlay"><a href="#" class="nav__link">О нас</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#" class="nav__link">Бургеры</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#" class="nav__link">Команда</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#" class="nav__link">Меню</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#" class="nav__link">Отзывы</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#" class="nav__link">Как мы работаем</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#" class="nav__link">Контакты</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#about" class="nav__link">О нас</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#burgers" class="nav__link">Бургеры</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#team" class="nav__link">Команда</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#menu" class="nav__link">Меню</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#map" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
