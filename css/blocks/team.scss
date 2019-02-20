@@ -33,7 +33,7 @@
 }
 
 .team-acco__item {
-    // margin-bottom: rem(40px);
+    margin-bottom: rem(10px);
 
     &:last-child {
         margin-bottom: 0;
@@ -47,10 +47,6 @@
                 transform: rotate(-180deg);
             }
         }
-
-        .team-acco__content {
-            height: rem(120px);
-        }
     }
 }
 
@@ -61,7 +57,7 @@
     text-decoration: none;
     position: relative;
     display: inline-flex;
-    margin-bottom: rem(20px);
+    margin-bottom: rem(10px);
     align-items: center;  
 
     @include tablets() {
@@ -101,6 +97,7 @@
     padding-top: rem(14px) 0 rem(14px);
     height: 0;
     overflow: hidden;
+    transition: height .3s;
 
     @include tablets() {
         flex-direction: column;
@@ -126,6 +123,7 @@
 .team-acco__text {
     text-align: left;
     margin-left: rem(15px);
+    margin-bottom: rem(40px);
 
     @include tablets() {
         text-align: center;

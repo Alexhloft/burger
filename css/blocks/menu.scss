@@ -18,25 +18,24 @@
 
 .menu-acco__item {
 	height: 100%;
-	@include phones {
-		width: rem(70px);
-	}
+	// @include phones {
+	// 	width: rem(70px);
+	// }
 
 	&.active {
 		.menu-acco__trigger-text {
 			color: $yellow;
 		}
+		// .menu-acco__content {
+		// 	width: rem(800px);
 
-		.menu-acco__content {
-			width: rem(800px);
-
-			@include tablets {
-				width: rem(500px);
-			}
-			@include phones {
-				width: rem(300px);
-			}
-		}
+		// 	@include tablets {
+		// 		width: rem(500px);
+		// 	}
+		// 	@include phones {
+		// 		width: rem(300px);
+		// 	}
+		// }
 	}
 }
 
@@ -70,6 +69,8 @@
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
+
+	transition: .3s;
 }
 
 .menu-acco__text {

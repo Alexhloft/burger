@@ -22,7 +22,7 @@
                         <div class="header__btns">
                             <nav class="nav">
                                 <ul class="nav__list">
-                                    <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                                    <li class="nav__item"><a href="#features" class="nav__link">О нас</a></li>
                                     <li class="nav__item"><a href="#burgers" class="nav__link">Бургеры</a></li>
                                     <li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
                                     <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
@@ -43,7 +43,7 @@
                             <h2 class="about__subtitle subtitle subtitle--white">натуральные бургеры</h2>
                         </div>
                     </div> 
-                    <a href="#" class="about__arrow">
+                    <a href="#features" class="about__arrow">
                         <svg class="about__arrow-img">
                             <use xlink:href="./img/icons/sprite.svg#arrow"></use>
                         </svg>
@@ -94,111 +94,487 @@
                 </div>
             </section>
             <section class="section burgers" id="burgers">
-                <div class="burgers__left">
-                    <a href="" class="burgers__arrow">
-                        <svg class="burgers__arrow-img-left">
-                            <use xlink:href="./img/icons/sprite.svg#arrow"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="burgers__content">
-                    <div class="burgers__burger">
-                        <div class="burgers__comp">
-                            <div class="burgers__comp-sq">
-                                <svg class="burgers__comp-img">
-                                    <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                <div class="burgers__container">
+                    <div class="burgers__slider">
+                        <div class="burgers__left">
+                            <a href="" class="burgers__arrow">
+                                <svg class="burgers__arrow-img-left">
+                                    <use xlink:href="./img/icons/sprite.svg#arrow"></use>
                                 </svg>
-                                <div class="burgers__comp-text">состав</div>
-                            </div>
-                            <div class="burgers__comp-popup">
-                                <ul class="burgers__comp-list">
-                                    <li class="burgers__comp-item">
-                                        <svg class="burgers__comp-item-img">
-                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
-                                        </svg>
-                                        <div class="burgers__comp-desc">
-                                            <div class="burgers__comp-ingr">Говядина</div>
-                                            <div class="burgers__comp-weight">300 г</div>
-                                        </div>
-                                    </li>
-                                    <li class="burgers__comp-item">
-                                        <svg class="burgers__comp-item-img">
-                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
-                                        </svg>
-                                        <div class="burgers__comp-desc">
-                                            <div class="burgers__comp-ingr">Булочки</div>
-                                            <div class="burgers__comp-weight">100 г</div>
-                                        </div>
-                                    </li>
-                                    <li class="burgers__comp-item">
-                                        <svg class="burgers__comp-item-img">
-                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
-                                        </svg>
-                                        <div class="burgers__comp-desc">
-                                            <div class="burgers__comp-ingr">Зелень</div>
-                                            <div class="burgers__comp-weight">70 г</div>
-                                        </div>
-                                    </li>
-                                    <li class="burgers__comp-item">
-                                        <svg class="burgers__comp-item-img">
-                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
-                                        </svg>
-                                        <div class="burgers__comp-desc">
-                                            <div class="burgers__comp-ingr">Соус</div>
-                                            <div class="burgers__comp-weight">150 г</div>
-                                        </div>
-                                    </li>
-                                    <li class="burgers__comp-item">
-                                        <svg class="burgers__comp-item-img">
-                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
-                                        </svg>
-                                        <div class="burgers__comp-desc">
-                                            <div class="burgers__comp-ingr">Овощи</div>
-                                            <div class="burgers__comp-weight">200 г</div>
-                                        </div>
-                                    </li>
-                                    <li class="burgers__comp-item">
-                                        <svg class="burgers__comp-item-img">
-                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
-                                        </svg>
-                                        <div class="burgers__comp-desc">
-                                            <div class="burgers__comp-ingr">Сыр</div>
-                                            <div class="burgers__comp-weight">80 г</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <a href="#burgers" class="close-btn"></a>
-                            </div>
+                            </a>
                         </div>
-                        <div class="burgers__burger-img">
-                            <img src="./img/blackburger.png" alt="black burger" class="burgers__burger-img-pic">
+                        <div class="burgers__content">
+                            <ul class="burgers__list">
+                                <li class="burgers__item">
+                                    <div class="burgers__burger">
+                                        <div class="burgers__comp">
+                                            <div class="burgers__comp-sq">
+                                                <svg class="burgers__comp-img">
+                                                    <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                                </svg>
+                                                <div class="burgers__comp-text">состав</div>
+                                            </div>
+                                            <div class="burgers__comp-popup">
+                                                <ul class="burgers__comp-list">
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Говядина</div>
+                                                            <div class="burgers__comp-weight">300 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Булочки</div>
+                                                            <div class="burgers__comp-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Зелень</div>
+                                                            <div class="burgers__comp-weight">70 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Соус</div>
+                                                            <div class="burgers__comp-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Овощи</div>
+                                                            <div class="burgers__comp-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Сыр</div>
+                                                            <div class="burgers__comp-weight">80 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="#burgers" class="close-btn"></a>
+                                            </div>
+                                        </div>
+                                        <div class="burgers__burger-img">
+                                            <img src="./img/blackburger.png" alt="black burger" class="burgers__burger-img-pic">
+                                        </div>
+                                        <div class="burgers__kkal">
+                                            <svg class="burgers__kkal-img">
+                                                <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <div class="burgers__kkal-value">1200</div>
+                                            <div class="burgers__kkal-text">ккал</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__desc">
+                                        <div class="burgers__title title title--white">Dark Beef Burger</div>
+                                        <div class="burgers__text text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <span class="burgers__price-value">500</span>
+                                                <span class="burgers__price-rub">рублей</span>
+                                            </div>
+                                            <a href="#order" class="btn btn--red">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burgers__item">
+                                    <div class="burgers__burger">
+                                        <div class="burgers__comp">
+                                            <div class="burgers__comp-sq">
+                                                <svg class="burgers__comp-img">
+                                                    <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                                </svg>
+                                                <div class="burgers__comp-text">состав</div>
+                                            </div>
+                                            <div class="burgers__comp-popup">
+                                                <ul class="burgers__comp-list">
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Говядина</div>
+                                                            <div class="burgers__comp-weight">300 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Булочки</div>
+                                                            <div class="burgers__comp-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Зелень</div>
+                                                            <div class="burgers__comp-weight">70 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Соус</div>
+                                                            <div class="burgers__comp-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Овощи</div>
+                                                            <div class="burgers__comp-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Сыр</div>
+                                                            <div class="burgers__comp-weight">80 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="#burgers" class="close-btn"></a>
+                                            </div>
+                                        </div>
+                                        <div class="burgers__burger-img">
+                                            <img src="./img/chik-burger.png" alt="chicken burger" class="burgers__burger-img-pic">
+                                        </div>
+                                        <div class="burgers__kkal">
+                                            <svg class="burgers__kkal-img">
+                                                <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <div class="burgers__kkal-value">1200</div>
+                                            <div class="burgers__kkal-text">ккал</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__desc">
+                                        <div class="burgers__title title title--white">Dark Beef Burger</div>
+                                        <div class="burgers__text text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <span class="burgers__price-value">500</span>
+                                                <span class="burgers__price-rub">рублей</span>
+                                            </div>
+                                            <a href="#order" class="btn btn--red">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burgers__item">
+                                    <div class="burgers__burger">
+                                        <div class="burgers__comp">
+                                            <div class="burgers__comp-sq">
+                                                <svg class="burgers__comp-img">
+                                                    <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                                </svg>
+                                                <div class="burgers__comp-text">состав</div>
+                                            </div>
+                                            <div class="burgers__comp-popup">
+                                                <ul class="burgers__comp-list">
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Говядина</div>
+                                                            <div class="burgers__comp-weight">300 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Булочки</div>
+                                                            <div class="burgers__comp-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Зелень</div>
+                                                            <div class="burgers__comp-weight">70 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Соус</div>
+                                                            <div class="burgers__comp-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Овощи</div>
+                                                            <div class="burgers__comp-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Сыр</div>
+                                                            <div class="burgers__comp-weight">80 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="#burgers" class="close-btn"></a>
+                                            </div>
+                                        </div>
+                                        <div class="burgers__burger-img">
+                                            <img src="./img/Cheeseburger.png" alt="cheeseburger" class="burgers__burger-img-pic">
+                                        </div>
+                                        <div class="burgers__kkal">
+                                            <svg class="burgers__kkal-img">
+                                                <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <div class="burgers__kkal-value">1200</div>
+                                            <div class="burgers__kkal-text">ккал</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__desc">
+                                        <div class="burgers__title title title--white">Dark Beef Burger</div>
+                                        <div class="burgers__text text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <span class="burgers__price-value">500</span>
+                                                <span class="burgers__price-rub">рублей</span>
+                                            </div>
+                                            <a href="#order" class="btn btn--red">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burgers__item">
+                                    <div class="burgers__burger">
+                                        <div class="burgers__comp">
+                                            <div class="burgers__comp-sq">
+                                                <svg class="burgers__comp-img">
+                                                    <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                                </svg>
+                                                <div class="burgers__comp-text">состав</div>
+                                            </div>
+                                            <div class="burgers__comp-popup">
+                                                <ul class="burgers__comp-list">
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Говядина</div>
+                                                            <div class="burgers__comp-weight">300 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Булочки</div>
+                                                            <div class="burgers__comp-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Зелень</div>
+                                                            <div class="burgers__comp-weight">70 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Соус</div>
+                                                            <div class="burgers__comp-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Овощи</div>
+                                                            <div class="burgers__comp-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Сыр</div>
+                                                            <div class="burgers__comp-weight">80 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="#burgers" class="close-btn"></a>
+                                            </div>
+                                        </div>
+                                        <div class="burgers__burger-img">
+                                            <img src="./img/sandwich.png" alt="sandwich burger" class="burgers__burger-img-pic">
+                                        </div>
+                                        <div class="burgers__kkal">
+                                            <svg class="burgers__kkal-img">
+                                                <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <div class="burgers__kkal-value">1200</div>
+                                            <div class="burgers__kkal-text">ккал</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__desc">
+                                        <div class="burgers__title title title--white">Dark Beef Burger</div>
+                                        <div class="burgers__text text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <span class="burgers__price-value">500</span>
+                                                <span class="burgers__price-rub">рублей</span>
+                                            </div>
+                                            <a href="#order" class="btn btn--red">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="burgers__item">
+                                    <div class="burgers__burger">
+                                        <div class="burgers__comp">
+                                            <div class="burgers__comp-sq">
+                                                <svg class="burgers__comp-img">
+                                                    <use xlink:href="./img/icons/sprite.svg#burger"></use>
+                                                </svg>
+                                                <div class="burgers__comp-text">состав</div>
+                                            </div>
+                                            <div class="burgers__comp-popup">
+                                                <ul class="burgers__comp-list">
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Говядина</div>
+                                                            <div class="burgers__comp-weight">300 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Булочки</div>
+                                                            <div class="burgers__comp-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Зелень</div>
+                                                            <div class="burgers__comp-weight">70 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Соус</div>
+                                                            <div class="burgers__comp-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Овощи</div>
+                                                            <div class="burgers__comp-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="burgers__comp-item">
+                                                        <svg class="burgers__comp-item-img">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="burgers__comp-desc">
+                                                            <div class="burgers__comp-ingr">Сыр</div>
+                                                            <div class="burgers__comp-weight">80 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="#burgers" class="close-btn"></a>
+                                            </div>
+                                        </div>
+                                        <div class="burgers__burger-img">
+                                            <img src="./img/shrimp-burger.png" alt="shrimp burger" class="burgers__burger-img-pic">
+                                        </div>
+                                        <div class="burgers__kkal">
+                                            <svg class="burgers__kkal-img">
+                                                <use xlink:href="./img/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <div class="burgers__kkal-value">1200</div>
+                                            <div class="burgers__kkal-text">ккал</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__desc">
+                                        <div class="burgers__title title title--white">Dark Beef Burger</div>
+                                        <div class="burgers__text text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                        <div class="burgers__order">
+                                            <div class="burgers__price">
+                                                <span class="burgers__price-value">500</span>
+                                                <span class="burgers__price-rub">рублей</span>
+                                            </div>
+                                            <a href="#order" class="btn btn--red">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="burgers__kkal">
-                            <svg class="burgers__kkal-img">
-                                <use xlink:href="./img/icons/sprite.svg#kkal"></use>
-                            </svg>
-                            <div class="burgers__kkal-value">1200</div>
-                            <div class="burgers__kkal-text">ккал</div>
+                        <div class="burgers__right">
+                            <a href="" class="burgers__arrow">
+                                <svg class="burgers__arrow-img-right">
+                                    <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <div class="burgers__desc">
-                        <div class="burgers__title title title--white">Dark Beef Burger</div>
-                        <div class="burgers__text text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
-                        <div class="burgers__order">
-                            <div class="burgers__price">
-                                <span class="burgers__price-value">500</span>
-                                <span class="burgers__price-rub">рублей</span>
-                            </div>
-                            <a href="#" class="btn btn--red">Заказать</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="burgers__right">
-                    <a href="" class="burgers__arrow">
-                        <svg class="burgers__arrow-img-right">
-                            <use xlink:href="./img/icons/sprite.svg#arrow"></use>
-                        </svg>
-                    </a>
                 </div>
             </section>
             <section class="section team" id="team">
@@ -207,31 +583,31 @@
                         <div class="team__title title title--yellow">Команда</div>
                         <ul class="team-acco">
                             <li class="team-acco__item">
-                                <a class="team-acco__trigger" href="#">Дэниэл Редклифф</a>
+                                <a class="team-acco__trigger" href="#team">Дэниэл Редклифф</a>
                                 <div class="team-acco__content">
                                     <div class="team-acco__pic">
                                         <div class="team-acco__img" style="background-image: url('./img/teammate.png')"></div>
                                     </div>
                                     <div class="team-acco__text">
                                         <div class="team-acco__title">Шеф-повар</div>
-                                        <div class="team-acco__text-content text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                        <div class="team-acco__text-content text">С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ.С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="team-acco__item active">
-                                <a class="team-acco__trigger" href="#">Ричард Джеймс</a>
+                            <li class="team-acco__item">
+                                <a class="team-acco__trigger" href="#team">Ричард Джеймс</a>
                                 <div class="team-acco__content">
                                     <div class="team-acco__pic">
                                         <div class="team-acco__img" style="background-image: url('./img/teammate.png')"></div>
                                     </div>
                                     <div class="team-acco__text">
                                         <div class="team-acco__title">Оператор</div>
-                                        <div class="team-acco__text-content text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                        <div class="team-acco__text-content text">С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                                     </div>
                                 </div>
                             </li>
                             <li class="team-acco__item">
-                                <a class="team-acco__trigger" href="#">Джейк Финн</a>
+                                <a class="team-acco__trigger" href="#team">Джейк Финн</a>
                                 <div class="team-acco__content">
                                     <div class="team-acco__pic">
                                         <div class="team-acco__img" style="background-image: url('./img/teammate.png')"></div>
@@ -243,7 +619,7 @@
                                 </div>
                             </li>
                             <li class="team-acco__item">
-                                <a class="team-acco__trigger" href="#">Николай Иванов</a>
+                                <a class="team-acco__trigger" href="#team">Николай Иванов</a>
                                 <div class="team-acco__content">
                                     <div class="team-acco__pic">
                                         <div class="team-acco__img" style="background-image: url('./img/teammate.png')"></div>
@@ -261,7 +637,7 @@
             <section class="section menu" id="menu">
                 <div class="menu__title title title--white">Меню</div>
                 <ul class="menu-acco">
-                    <li class="menu-acco__item active">
+                    <li class="menu-acco__item">
                         <a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg4.png')">
                             <div class="menu-acco__trigger-text">Для мясоедов</div>
                         </a>
@@ -526,7 +902,7 @@
         <div class="overlay" id="overlay">
             <nav class="nav-overlay">
                 <ul class="nav__list nav__list-overlay">
-                    <li class="nav__item nav__item-overlay"><a href="#about" class="nav__link">О нас</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#features" class="nav__link">О нас</a></li>
                     <li class="nav__item nav__item-overlay"><a href="#burgers" class="nav__link">Бургеры</a></li>
                     <li class="nav__item nav__item-overlay"><a href="#team" class="nav__link">Команда</a></li>
                     <li class="nav__item nav__item-overlay"><a href="#menu" class="nav__link">Меню</a></li>
@@ -537,5 +913,8 @@
         </div>
     </div>
     <script src="./js/menu-btn.js"></script>
+    <script src="./js/burg-slider.js"></script>
+    <script src="./js/team-acco.js"></script>
+    <script src="./js/menu-acco.js"></script>
 </body>
 </html>
