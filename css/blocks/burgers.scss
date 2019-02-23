@@ -19,6 +19,7 @@
 }
 
 .burgers__content {
+    display: flex;
     overflow: hidden;
     height: 100%;
 }
@@ -28,6 +29,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    transition: .3s;
 }
 
 .burgers__item {
@@ -59,10 +61,16 @@
 
 .burgers__left {
     left: -2.5rem;
+    @include tablets {
+        left: 0;
+    }
 }
 
 .burgers__right {
     right: -2.5rem;
+    @include tablets {
+        right: 0;
+    }
 }
 
 .burgers__arrow-img-left, 
@@ -162,36 +170,6 @@
 .burgers__comp-weight {
     @include ubuntu(light);
 }
-
-.close-btn {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 40px;
-    height: 40px;
-
-    visibility: hidden;
-
-    @include tablets {
-        visibility: visible;
-    }
-
-    &:before, &:after {
-        position: absolute;
-        left: 15px;
-        content: ' ';
-        height: 20px;
-        width: 3px;
-        background-color: $yellow2;
-    }
-    &:before {
-        transform: rotate(45deg);
-    }
-    &:after {
-        transform: rotate(-45deg);
-    }
-}
-
 
 .burgers__comp-text,
 .burgers__kkal-text,

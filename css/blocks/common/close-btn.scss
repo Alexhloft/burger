@@ -1,0 +1,35 @@
+.close-btn {
+    position: absolute;
+    width: rem(25px);
+    height: rem(25px);
+    
+    &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 20px;
+        width: 3px;
+        background-color: $yellow2;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.burgers__close-btn {
+    top: 8px;
+    right: 0;
+
+    visibility: hidden;
+    @include tablets {
+        visibility: visible;
+    }
+}
+
+.popup__close-btn {
+    top: rem(15px);
+    right: rem(15px);
+}

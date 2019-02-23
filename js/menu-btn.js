@@ -19,11 +19,11 @@ let menu =  (function(options) {
         }
     }
 
-    return {open: addListeners};
+    return {toggle: addListeners};
 
 })({
     button: '#toggle',
     menu: '#overlay'
 });
 
-menu.open();
+menu.toggle();

@@ -1,0 +1,33 @@
+.popup {
+    position: fixed;
+    background: rgba(47, 50, 52, 0.95);
+    overflow: hidden; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+}
+
+.popup--active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%; 
+}
+
+.popup__container {
+    width: 460px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+
+

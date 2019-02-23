@@ -1,0 +1,36 @@
+.order-popup {
+    position: fixed;
+    background: rgba(47, 50, 52, 0.95);
+    overflow: hidden; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+}
+
+.order-popup--active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%; 
+}
+
+.order-popup__container {
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
