@@ -33,7 +33,7 @@ btn.addEventListener('click', e => {
     })
 
     popupOrder.addEventListener("click", e => {
-        closeBtn = popupOrder.querySelector('.order-popup__btn');
+        let closeBtn = popupOrder.querySelector('.order-popup__btn');
         if (e.target == popupOrder || e.target == closeBtn) {
             e.preventDefault();
             
