@@ -56,7 +56,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100;
+    z-index: 10;
 }
 
 .burgers__left {
@@ -138,7 +138,7 @@
     padding: rem(20px);
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
-    z-index: 100;
+    z-index: 20;
 
     @include ubuntu(medium);
     font-size: rem(14px);

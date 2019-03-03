@@ -4,8 +4,8 @@
     position: relative;
 }
 
-.map__obj {
-    background: url(../img/map.png) center center / cover no-repeat;
+.map__container {
+    width: 100%;
     height: 100%;
 }
 
@@ -15,4 +15,5 @@
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 5;
 }

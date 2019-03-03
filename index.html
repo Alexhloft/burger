@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <main class="main">
-            <section class="section about" id="about">
+            <section class="section about active" id="about">
                 <div class="container about__container">
                     <header class="header about__header">
                         <a href="index.html" class="logo header__logo">
@@ -22,16 +22,16 @@
                         <div class="header__btns">
                             <nav class="nav">
                                 <ul class="nav__list">
-                                    <li class="nav__item"><a href="#features" class="nav__link">О нас</a></li>
-                                    <li class="nav__item"><a href="#burgers" class="nav__link">Бургеры</a></li>
-                                    <li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
-                                    <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
-                                    <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
-                                    <li class="nav__item"><a href="#working" class="nav__link">Как мы работаем</a></li>
-                                    <li class="nav__item"><a href="#map" class="nav__link">Контакты</a></li>
+                                    <li class="nav__item"><a href="#features" class="nav__link" data-scroll-to="1">О нас</a></li>
+                                    <li class="nav__item"><a href="#burgers" class="nav__link" data-scroll-to="2">Бургеры</a></li>
+                                    <li class="nav__item"><a href="#team" class="nav__link" data-scroll-to="3">Команда</a></li>
+                                    <li class="nav__item"><a href="#menu" class="nav__link" data-scroll-to="4">Меню</a></li>
+                                    <li class="nav__item"><a href="#reviews" class="nav__link" data-scroll-to="5">Отзывы</a></li>
+                                    <li class="nav__item"><a href="#working" class="nav__link" data-scroll-to="6">Как мы работаем</a></li>
+                                    <li class="nav__item"><a href="#map" class="nav__link" data-scroll-to="8">Контакты</a></li>
                                 </ul>
                             </nav>
-                            <a href="#order" class="btn btn--red">Заказать</a>
+                            <a href="#order" class="btn btn--red" data-scroll-to="7">Заказать</a>
                         </div>
                     </header>
                     <div class="about__content">
@@ -43,7 +43,7 @@
                             <h2 class="about__subtitle subtitle subtitle--white">натуральные бургеры</h2>
                         </div>
                     </div> 
-                    <a href="#features" class="about__arrow">
+                    <a href="#features" class="about__arrow" data-scroll-to="1">
                         <svg class="about__arrow-img">
                             <use xlink:href="./img/icons/sprite.svg#arrow"></use>
                         </svg>
@@ -761,7 +761,40 @@
             <section class="section working section-centered" id="working">
                 <div class="container working__container">
                     <h2 class="working__title title title--black">Как мы работаем</h2>
-                    <div class="working__video"></div>
+                    <div class="player__wrap">
+                        <div class="player__play player__play-img player__play-bg">
+                            <video class="player__video" src="./video/video.mp4"></video>
+                            <div class="player__play-icon">
+                                <a href="#" class="player__play-link">
+                                    <svg class="play-icon">
+                                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="player__controls">
+                                <div class="player__toolbar">
+                                    <a href="#" class="player__toolbar-icon">
+                                        <svg class="play-icon">
+                                            <use xlink:href="./img/icons/sprite.svg#play"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="player__toolbar-range">
+                                        <div class="player__toolbar-range-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="player__volume">
+                                    <a href="#" class="player__volume-icon">
+                                        <svg class="volume-icon">
+                                            <use xlink:href="./img/icons/sprite.svg#volume"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="player__volume-range">
+                                        <div class="player__volume-range-circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section order section-centered" id="order">
@@ -847,7 +880,7 @@
                 </div>
             </section>
             <section class="section map" id="map">
-                <div class="map__obj"></div>
+                <div id="map" class="map__container"></div>
                 <footer class="footer map__footer">
                     <div class="footer__container container">
                         <address class="contacts">
@@ -897,15 +930,15 @@
         </main>
         <nav class="fixed-menu">
             <ul class="fixed-menu__list">
-                <li class="fixed-menu__item fixed-menu__item--active"><a href="#about" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#features" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#burgers" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#team" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#menu" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#reviews" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#working" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#order" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="#map" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item active"><a href="#about" class="fixed-menu__link" data-scroll-to="0"></a></li>
+                <li class="fixed-menu__item"><a href="#features" class="fixed-menu__link" data-scroll-to="1"></a></li>
+                <li class="fixed-menu__item"><a href="#burgers" class="fixed-menu__link" data-scroll-to="2"></a></li>
+                <li class="fixed-menu__item"><a href="#team" class="fixed-menu__link" data-scroll-to="3"></a></li>
+                <li class="fixed-menu__item"><a href="#menu" class="fixed-menu__link" data-scroll-to="4"></a></li>
+                <li class="fixed-menu__item"><a href="#reviews" class="fixed-menu__link" data-scroll-to="5"></a></li>
+                <li class="fixed-menu__item"><a href="#working" class="fixed-menu__link" data-scroll-to="6"></a></li>
+                <li class="fixed-menu__item"><a href="#order" class="fixed-menu__link" data-scroll-to="7"></a></li>
+                <li class="fixed-menu__item"><a href="#map" class="fixed-menu__link" data-scroll-to="8"></a></li>
             </ul>
         </nav>
         <div class="menu-btn" id="toggle">
@@ -916,12 +949,12 @@
         <div class="overlay" id="overlay">
             <nav class="nav-overlay">
                 <ul class="nav__list nav__list-overlay">
-                    <li class="nav__item nav__item-overlay"><a href="#features" class="nav__link">О нас</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#burgers" class="nav__link">Бургеры</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#team" class="nav__link">Команда</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#menu" class="nav__link">Меню</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#reviews" class="nav__link">Отзывы</a></li>
-                    <li class="nav__item nav__item-overlay"><a href="#map" class="nav__link">Контакты</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#features" class="nav__link" data-scroll-to="1">О нас</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#burgers" class="nav__link" data-scroll-to="2">Бургеры</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#team" class="nav__link" data-scroll-to="3">Команда</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#menu" class="nav__link" data-scroll-to="4">Меню</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#reviews" class="nav__link" data-scroll-to="5">Отзывы</a></li>
+                    <li class="nav__item nav__item-overlay"><a href="#map" class="nav__link" data-scroll-to="8">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -944,5 +977,13 @@
     <script src="./js/menu-acco.js"></script>
     <script src="./js/rev-popup.js"></script>
     <script src="./js/order.js"></script>
+
+    <script src="./js/jquery-3.3.1-min.js"></script>
+    <script src="./js/mobiledetect-min.js"></script>
+    <script src="./js/touchswipe-jq-min.js"></script>
+    <script src="./js/OPS.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b9a32934-ce6c-4afe-8a8c-ef4b23ef8ca6&lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
 </body>
 </html>
