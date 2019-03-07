@@ -13,7 +13,7 @@ function init(){
     },
     {
         iconLayout: 'default#image',
-        iconImageHref: '../img/icons/map-marker.svg'
+        iconImageHref: './img/icons/map-marker.svg'
     });
 
     map.geoObjects.add(placemark);
